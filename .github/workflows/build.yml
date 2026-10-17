@@ -26,7 +26,7 @@ jobs:
           $BT/zipalign -p -f 4 app/build/outputs/apk/release/app-release-unsigned.apk out/Aile-Butcesi-unsigned.apk
           cp $BT/lib/apksigner.jar out/apksigner.jar
           $BT/aapt2 dump badging out/Aile-Butcesi-unsigned.apk | head -8
-      - name: 'apk' dalına koy
+      - name: APK dalına koy
         run: |
           cd out
           git init -q -b apk
